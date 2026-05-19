@@ -46,9 +46,11 @@ function App() {
             // Combining item.id with index ensures keys are absolutely unique 
             // even if StrictMode temporarily duplicates state in dev
             <div key={`${item.id}-${index}`} className='card rounded-md bg-white p-2 transition duration-300 ease-in-out'>
-              <img className='rounded-md h-36 object-cover w-full' src={item.download_url} alt={item.author} />
-              {/* Changed text color to stone-800 so it's readable on the white card background */}
-              <h2 className='text-stone-800 font-medium mt-2'>{item.author}</h2>
+              <a href={item.url}>
+                <img className='rounded-md h-36 object-cover w-full' src={item.download_url} alt={item.author} />
+                {/* Changed text color to stone-800 so it's readable on the white card background */}
+                <h2 className='text-stone-800 font-medium mt-2'>{item.author}</h2>
+              </a>
             </div>
           ))}
         </section>
