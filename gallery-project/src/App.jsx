@@ -45,7 +45,7 @@ function App() {
 
   return (
     <div className="main min-h-screen bg-stone-900 text-stone-200 relative pb-16">
-      <h1 className='text-center text-2xl py-6 font-bold tracking-wide'>Sample Gallery Project</h1>
+      <h1 className='text-center text-2xl py-6 font-bold tracking-wide'> Gallery with pagination </h1>
 
       {/* Fixed Full Screen Overlay Loader */}
       {loading && (
